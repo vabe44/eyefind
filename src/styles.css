@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: unset;
+}
+
+app-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+app-navbar h3 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: grey;
+    margin: unset;
+    padding-top: 30px;
+}
+
+app-navbar .navigation {
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 75% 5%;
+    width: 80%;
+    background-color: gray;
+    padding: 10px 0;
+}
+
+img.navbar.icon {
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+}
+
+input#addressBar {
+    border-radius: 6px;
+    padding: 3px;
+    color: gray;
+}
