@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(240,240,240);
+    border-top: 10px solid rgb(255,190,0);
+}
+
+.container .menu {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menu .media {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-left: 1px solid grey;
+    padding: 5px 10px;
+}
+
+.menu .media:first-child {
+    border-left: unset;
+}
+
+.menu-icon {
+    margin: 2px;
+}
+
+.menu-icon img {
+    height: 100%;
+}
+
+.menu-text {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-text p {
+    margin: unset;
+}

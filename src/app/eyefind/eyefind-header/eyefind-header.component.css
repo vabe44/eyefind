@@ -1,0 +1,86 @@
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "logo span weather"
+                         "search search random";
+}
+
+.logo {
+    grid-area: logo;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.weather {
+    grid-area: weather;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.weather .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1em;
+}
+
+.weather p {
+    text-align: right;
+    margin: unset;
+}
+
+img.weather-icon {
+    height: 3em;
+    width: auto;
+    border-left: 3px solid white;
+    padding-left: 1em;
+}
+
+.search {
+    grid-area: search;
+    display: flex;
+    background-color: white;
+    margin: 10px 2em 10px 10px;
+    padding: 5px 15px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+
+img.search-icon {
+    min-height: 100%;
+}
+
+input#eyefindSearch {
+    width: 100%;
+    margin-left: 1.5em;
+    border: none;
+    font-size: larger;
+    color: black;
+}
+
+input#eyefindSearch:focus {
+    outline: none !important;
+}
+
+.random {
+    grid-area: random;
+    margin: 10px;
+    margin-left: 2em;
+}
+
+button#randomButton {
+    background-color: darkcyan;
+    color: white;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
