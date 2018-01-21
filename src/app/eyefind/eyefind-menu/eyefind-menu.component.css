@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: rgb(240,240,240);
     border-top: 10px solid rgb(255,190,0);
+    border-bottom: 1px solid darkgray;
 }
 
 .container .menu {
@@ -15,7 +16,7 @@
 .menu .media {
     display: grid;
     grid-template-columns: 20% 80%;
-    border-left: 1px solid grey;
+    border-left: 1px solid darkgray;
     padding: 5px 10px;
 }
 

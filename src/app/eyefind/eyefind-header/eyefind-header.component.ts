@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EyefindHeaderComponent implements OnInit {
 
+  private weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  public weekday: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.weekday = this.weekdays[new Date(Date.now()).getDay()];
   }
 
 }
