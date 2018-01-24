@@ -1,14 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Chalet London Nineteen Sixty';
+    src: url('assets/fonts/ChaletLondonNineteenSixty.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Chalet New York Nineteen Sixty';
+    src: url('assets/fonts/ChaletNewYorkNineteenSixty.ttf') format('truetype');
+}
 
 body {
     margin: unset;
+    font-family: 'Chalet London Nineteen Sixty' !important;
 }
 
-app-navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: gray;
+p {
+    font-size: 21px;
 }
 
 app-eyefind-header {
@@ -17,4 +24,9 @@ app-eyefind-header {
     flex-direction: column;
     align-items: center;
     background-color: rgb(72,139,194);
+}
+
+app-eyefind-homecontent {
+    display: flex;
+    justify-content: center;
 }

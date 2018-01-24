@@ -1,0 +1,16 @@
+<div class="news">
+  <div class="upper">
+    <div class="meta">
+        <h2>NEWS STORY OF THE DAY</h2>
+        <p class="title">{{ title }}</p>
+    </div>
+    <div class="image">
+      <img [src]="'assets/images/'+site.logo" [alt]="site.name">
+    </div>
+  </div>
+
+  <div class="text">
+    <p class="author">{{ author }} - {{ site.name}}</p>
+    <p class="content">{{ content }}</p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(72,139,194);
+    text-align: center;
+    color: white;
+}
+
+.content h2 {
+    margin: unset;
+}
+
+.advert {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 4px;
+}

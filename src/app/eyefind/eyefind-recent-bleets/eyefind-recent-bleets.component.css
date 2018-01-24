@@ -1,0 +1,42 @@
+.container {
+    background-color: rgb(240,240,240);
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h2 {
+    margin: unset;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icon {
+    display: flex;
+}
+
+.tweets .tweet {
+    border-bottom: 3px solid skyblue;
+    padding: 10px 0px;
+}
+
+.tweets .tweet:last-child {
+    border-bottom: unset;
+    padding-bottom: unset;
+}
+
+.tweet .user {
+    font-size: larger;
+}
+
+.tweet p {
+    margin: unset;
+}

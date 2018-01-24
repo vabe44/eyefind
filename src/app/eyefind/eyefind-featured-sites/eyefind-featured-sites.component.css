@@ -1,0 +1,15 @@
+.container {
+    background-color: rgb(240,240,240);
+    padding: 10px;
+}
+
+.container h2 {
+    text-transform: uppercase;
+}
+
+.sites {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
