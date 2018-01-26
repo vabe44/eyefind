@@ -1,3 +1,4 @@
+import { KeyboardService } from './keyboard.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,7 @@ import { EyefindNewsComponent } from './eyefind/eyefind-news/eyefind-news.compon
 import { EyefindWebsiteOfTheMinuteComponent } from './eyefind/eyefind-website-of-the-minute/eyefind-website-of-the-minute.component';
 import { EyefindRecentBleetsComponent } from './eyefind/eyefind-recent-bleets/eyefind-recent-bleets.component';
 import { EyefindSponsoredAdvertComponent } from './eyefind/eyefind-sponsored-advert/eyefind-sponsored-advert.component';
+import { KeyboardComponent } from './keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,13 @@ import { EyefindSponsoredAdvertComponent } from './eyefind/eyefind-sponsored-adv
     EyefindNewsComponent,
     EyefindWebsiteOfTheMinuteComponent,
     EyefindRecentBleetsComponent,
-    EyefindSponsoredAdvertComponent
+    EyefindSponsoredAdvertComponent,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ KeyboardService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

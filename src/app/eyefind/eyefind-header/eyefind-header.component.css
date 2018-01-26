@@ -1,4 +1,5 @@
 .container {
+    padding-top: 100px;
     width: 80%;
     display: grid;
     grid-template-columns: 25% auto 25%;
