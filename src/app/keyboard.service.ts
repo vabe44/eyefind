@@ -5,17 +5,18 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class KeyboardService {
 
-  private keyboardOpenSubject: Subject<boolean>;
+//   private keyboardOpenSubject: Subject<boolean>;
+  private keyboardOpenSubject: Subject<string>;
 
   constructor() {
-      this.keyboardOpenSubject = new Subject<boolean>();
+      this.keyboardOpenSubject = new Subject<string>();
   }
 
-  toggleKeyboard(opening: boolean): void {
+  toggleKeyboard(opening: string): void {
       this.keyboardOpenSubject.next(opening);
   }
 
-  onKeyboardToggle(): Observable<boolean> {
+  onKeyboardToggle(): Observable<string> {
       return this.keyboardOpenSubject;
   }
 

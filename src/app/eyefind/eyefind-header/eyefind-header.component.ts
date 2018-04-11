@@ -17,8 +17,8 @@ export class EyefindHeaderComponent implements OnInit {
     this.weekday = this.weekdays[new Date(Date.now()).getDay()];
   }
 
-  onKeyboardOpen() {
-    this.keyboardService.toggleKeyboard(true);
+  onKeyboardOpen($event) {
+    this.keyboardService.toggleKeyboard($event.srcElement.id);
   }
 
 

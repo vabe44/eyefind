@@ -9,7 +9,6 @@ div#navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
 }
 
 h3 {
@@ -22,10 +21,17 @@ h3 {
 }
 
 .navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(/assets/images/toolbar_badger_gradient.png);
+    background-size: contain;
+}
+
+.controls {
     display: grid;
     grid-template-columns: 5% 5% 5% 5% 75% 5%;
-    width: 80%;
-    background-color: gray;
+    width: 1280px;
     padding: 10px 0;
 }
 

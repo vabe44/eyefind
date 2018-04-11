@@ -1,21 +1,25 @@
-<div class="container">
-  <div class="logo">
-    <img src="assets/images/eyefind-logo.png" alt="Eyefind Logo">
-  </div>
-  <div class="weather">
-    <div class="text">
-        <p>Vinewood Hills</p>
-        <p>{{ weekday }}</p>
+<div class="header">
+  <div class="logo container">
+    <div class="logo">
+      <img src="assets/images/eyefind-logo.png" alt="Eyefind Logo">
     </div>
-    <img class="weather-icon" src="/assets/open-iconic/svg/cloud.svg" alt="Weather Icon">
-  </div>
-  <div class="search">
-    <div class="icon">
-      <img class="search-icon" src="/assets/open-iconic/svg/magnifying-glass.svg" alt="Search">
+    <div class="weather">
+      <div class="text">
+          <p>Vinewood Hills</p>
+          <p>{{ weekday }}</p>
+      </div>
+      <img class="weather-icon" src="/assets/open-iconic/svg/cloud.svg" alt="Weather Icon">
     </div>
-    <input type="text" name="eyefindSearch" id="eyefindSearch" placeholder="Search Eyefind" (click)="onKeyboardOpen()">
   </div>
-  <div class="random">
-    <button id="randomButton" type="button">Random</button>
+  <div class="search container">
+    <div class="search">
+      <div class="search-icon">
+        <img class="magnifying-glass-icon" src="/assets/open-iconic/svg/magnifying-glass.svg" alt="Search">
+      </div>
+      <input type="text" name="eyefindSearch" id="eyefindSearch" placeholder="Search Eyefind" (click)="onKeyboardOpen($event)">
+    </div>
+    <div class="random">
+      <button id="randomButton" type="button">Random</button>
+    </div>
   </div>
 </div>

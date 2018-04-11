@@ -1,8 +1,18 @@
 .container {
-    width: 80%;
+    width: 1260px;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.main {
+    width: 820px;
+    padding: 25px 10px;
+}
+
+.sidebar {
+    width: 430px;
+    padding: 25px 10px;
 }

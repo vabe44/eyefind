@@ -8,12 +8,12 @@
 }
 
 .container .menu {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 1260px;
+    display: flex;
 }
 
 .menu .media {
+    flex: 1;
     display: grid;
     grid-template-columns: 20% 80%;
     border-left: 1px solid darkgray;

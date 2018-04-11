@@ -33,6 +33,7 @@
     border: 1px solid gray;
     border-bottom: 3px solid gray;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .www, .space, .com, .net, .org {

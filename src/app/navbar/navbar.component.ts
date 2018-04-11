@@ -13,8 +13,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  onKeyboardOpen() {
-    this.keyboardService.toggleKeyboard(true);
+  onKeyboardOpen($event) {
+    this.keyboardService.toggleKeyboard($event.srcElement.id);
   }
 
 }

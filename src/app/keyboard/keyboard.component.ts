@@ -9,25 +9,35 @@ import { Component, OnInit, transition } from '@angular/core';
 export class KeyboardComponent implements OnInit {
 
   public active = false;
+  public activeInput: string;
 
   constructor(private keyboardService: KeyboardService) { }
 
   ngOnInit() {
     this.keyboardService.onKeyboardToggle().subscribe(
-      (opening) => {
-        if (opening) {
-          this.active = true;
-        } else {
-          this.active = false;
-        }
+      (inputId) => {
+        this.activeInput = inputId;
+        this.active = true;
       }
     );
   }
 
   onRightClick() {
-    console.log('RK');
     this.active = !this.active;
     return false;
+  }
+
+  simulateKey(key: string) {
+    const input = document.getElementById(this.activeInput) as HTMLInputElement;
+
+    if (key === 'backspace') {
+      input.value = input.value.slice(0, -1);
+    } else if (key === 'enter') {
+      console.log('enter pressed');
+    } else {
+      input.value += key;
+    }
+
   }
 
 }

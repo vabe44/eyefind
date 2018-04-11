@@ -1,11 +1,26 @@
-.container {
-    padding-top: 100px;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 25% auto 25%;
+.header {
+    width: 1260px;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 940px auto 270px;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: "logo span weather"
-                         "search search random";
+                         "search search random"; */
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+.logo.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -47,24 +62,36 @@ img.weather-icon {
 
 .search {
     grid-area: search;
+    width: 940px;
+    height: 60px;
     display: flex;
-    background-color: white;
-    margin: 10px 2em 10px 10px;
-    padding: 5px 15px;
-    padding-right: 5px;
-    border-radius: 3px;
+    /* background-color: white; */
+    /* margin: 10px 2em 10px 10px; */
+    /* padding: 5px 15px; */
+    /* padding-right: 5px; */
+    /* border-radius: 7px; */
+    /* background-color: white; */
 }
 
-img.search-icon {
+.search-icon {
+    padding: 12.5px 0;
+    background-color: white;
+    padding-left: 20px;
+    border-radius: 7px 0px 0px 7px;
+}
+
+img.magnifying-glass-icon {
     min-height: 100%;
 }
 
 input#eyefindSearch {
     width: 100%;
-    margin-left: 1.5em;
+    padding-left: 1.5em;
     border: none;
     font-size: larger;
     color: black;
+    background-color: white;
+    border-radius: 0px 7px 7px 0px;
 }
 
 input#eyefindSearch:focus {
@@ -73,8 +100,9 @@ input#eyefindSearch:focus {
 
 .random {
     grid-area: random;
-    margin: 10px;
-    margin-left: 2em;
+    width: 270px;
+    /* padding: 10px; */
+    /* padding-left: 2em; */
 }
 
 button#randomButton {
