@@ -36,6 +36,44 @@
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: rgb(214, 214, 214);
+    margin-bottom: -3px;
+}
+
 .www, .space, .com, .net, .org {
     grid-column-start: span 2;
+}
+
+.help {
+    align-self: flex-end;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    max-height: 36px;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: rgb(67,67,67);
+}
+
+.help p {
+    margin: unset;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.close, .select, .navigate {
+    display: flex;
+    padding: 0 12px;
+}
+
+.close {
+    padding: 0 12px;
+}
+
+ .help .image {
+    padding-left: 8px;
 }

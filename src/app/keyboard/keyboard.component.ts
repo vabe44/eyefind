@@ -40,4 +40,12 @@ export class KeyboardComponent implements OnInit {
 
   }
 
+  open() {
+    this.active = true;
+  }
+
+  close() {
+    this.active = false;
+  }
+
 }

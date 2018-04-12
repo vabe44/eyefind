@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: rgb(240,240,240);
-    border-top: 10px solid rgb(255,190,0);
+    border-top: 12px solid rgb(255,190,0);
     border-bottom: 1px solid darkgray;
 }
 
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     border-left: 1px solid darkgray;
-    padding: 5px 10px;
+    padding: 8px;
 }
 
 .menu .media:first-child {
@@ -26,6 +26,7 @@
 
 .menu-icon {
     margin: 2px;
+    max-height: 40px;
 }
 
 .menu-icon img {
@@ -39,4 +40,7 @@
 
 .menu-text p {
     margin: unset;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 22px;
 }

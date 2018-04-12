@@ -11,7 +11,7 @@
 
 body {
     margin: unset;
-    font-family: 'Chalet London Nineteen Sixty' !important;
+    font-family: 'Chalet London Nineteen Sixty', sans-serif !important;
 }
 
 p {
