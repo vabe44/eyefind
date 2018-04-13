@@ -1,12 +1,24 @@
 .news {
     height: 290px;
+    /* padding: 10px; */
+    color: rgb(67,67,67);
     background-color: rgb(240,240,240);
-    padding: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 .news-container {
-    /* padding: 10px; */
+    overflow: hidden;
+    height: 290px;
+    padding: 15px;
+}
+
+.meta h2 {
+    margin: unset;
+}
+
+.meta p {
+    color: black;
 }
 
 .upper {
@@ -18,4 +30,22 @@
 .image {
     background-color: white;
     padding: 10px;
+}
+
+.read-article {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.read-article a {
+    display: flex;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 100%;
+    background-color: rgb(240,240,240);
 }
